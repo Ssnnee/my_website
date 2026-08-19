@@ -4,6 +4,8 @@
 @theme static {
   --font-sans: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+
+  --color-accent: #a3e635;
 }
 
 .dark {
