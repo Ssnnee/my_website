@@ -3,8 +3,7 @@
 </script>
 
 <template>
-  <div
-  >
+  <div >
     <!-- Hero -->
     <main class="py-25 max-[600px]:py-17.5">
       <div class="mb-5 font-mono text-sm text-accent">
@@ -22,7 +21,7 @@
       </div>
 
       <p
-        class="mt-8 max-w-150 text-lg leading-[1.6] text-[#a3a3a3]"
+        class="mt-8 max-w-150 text-lg leading-[1.6] text-muted dark:text-[#a3a3a3]"
       >
         I build web applications, internal tools, and software
         that solve practical problems.
@@ -35,14 +34,14 @@
           href="https://github.com/ssnnee"
           target="_blank"
           rel="noopener noreferrer"
-          class="border-b border-(--border) pb-0.75 text-[#a3a3a3] transition-colors hover:text-accent"
+          class="border-b border-(--border) pb-0.75 text-muted dark:text-[#a3a3a3] transition-colors hover:text-accent"
         >
           github ↗
         </a>
 
         <a
           href="mailto:hello@example.com"
-          class="border-b border-(--border) pb-0.75 text-[#a3a3a3] transition-colors hover:text-accent"
+          class="border-b border-(--border) pb-0.75 text-muted dark:text-[#a3a3a3] transition-colors hover:text-accent"
         >
           email ↗
         </a>
@@ -61,7 +60,7 @@
         cat about.txt
       </div>
 
-      <div class="max-w-[650px] text-[16px] text-[#a3a3a3]">
+      <div class="max-w-[650px] text-[16px] text-muted dark:text-[#a3a3a3]">
         <p class="mb-5">
           I'm Samuel, a software engineer working mostly
           with JavaScript and TypeScript.
@@ -202,7 +201,7 @@
         echo $CONTACT
       </div>
 
-      <div class="max-w-162.5 text-base text-[#a3a3a3]">
+      <div class="max-w-162.5 text-base text-muted dark:text-[#a3a3a3]">
         <p class="mb-5">
           Have a project or want to talk?
         </p>
