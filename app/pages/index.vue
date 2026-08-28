@@ -81,44 +81,36 @@
 
     <!-- Projects -->
     <section
-      id="projects"
-      class="py-20 max-[600px]:py-15"
-    >
-      <div
-        class="relative mb-10 flex items-center gap-3 font-mono text-[14px] before:text-accent before:content-['$']"
-      >
-        ls projects/
-      </div>
-
-      <!-- Project 1 -->
-    <USeparator class="h-2" />
-      <article
-        class="py-6.25"
-      >
-        <div
-          class="flex items-baseline justify-between gap-5 max-[600px]:block"
+        id="projects"
+        class="py-20 max-[600px]:py-15"
         >
-          <div class="font-mono text-xl">
-            01. IGEPSA
+        <div
+            class="relative mb-10 flex items-center gap-3 font-mono text-[14px] before:text-accent before:content-['$']"
+            >
+            ls projects/
+        </div>
+
+          <!-- Project 1 -->
+      <USeparator class="h-2" />
+      <article class="py-6.25">
+        <div class="flex items-baseline justify-between gap-5">
+          <div class="min-w-0 font-mono text-xl">
+            01. Tsactlor
           </div>
 
-          <div
-            class="flex items-center justify-center gap-2 font-mono text-[12px] text-muted max-[600px]:mt-[5px] max-[600px]:block"
-          >
-          <ULink as="button">
-            <CodeXml size=18 />
-          </ULink>
-          <ULink as="button">
-            <ExternalLink size=18 />
-          </ULink>
+          <div class="flex shrink-0 items-center gap-2 font-mono text-[12px] text-muted">
+            <ULink as="button">
+            <CodeXml :size="18" />
+            </ULink>
+
+            <ULink as="button">
+            <ExternalLink :size="18" />
+            </ULink>
           </div>
         </div>
 
-        <p
-          class="my-2.5 mb-3.5 max-w-150 text-sm text-muted"
-        >
-          Platform for automating administrative tasks
-          and managing institutional data.
+        <p class="my-2.5 mb-3.5 max-w-150 text-sm text-muted">
+          I'll put some real description here later
         </p>
 
         <div class="font-mono text-[12px] text-[#525252]">
@@ -127,29 +119,29 @@
       </article>
 
       <!-- Project 2 -->
-    <USeparator class="h-4" />
+      <USeparator class="h-4" />
       <article
-        class="py-6.25"
-      >
-        <div
-          class="flex items-baseline justify-between gap-5 max-[600px]:block"
-        >
-          <div class="font-mono text-xl">
-            02. Inspecteurs
-          </div>
-
-          <div
-            class="font-mono text-[12px] text-muted max-[600px]:mt-[5px] max-[600px]:block"
+          class="py-6.25"
           >
-            2026
+          <div
+              class="flex items-baseline justify-between gap-5 max-[600px]:block"
+              >
+              <div class="font-mono text-xl">
+                02. Inspecteurs
+              </div>
+
+            <div
+                class="font-mono text-[12px] text-muted max-[600px]:mt-[5px] max-[600px]:block"
+                >
+                2026
+            </div>
           </div>
-        </div>
 
         <p
-          class="my-2.5 mb-3.5 max-w-150 text-sm text-muted"
-        >
-          Web interface for exploring, filtering and
-          visualizing structured Excel data.
+            class="my-2.5 mb-3.5 max-w-150 text-sm text-muted"
+            >
+            Web interface for exploring, filtering and
+            visualizing structured Excel data.
         </p>
 
         <div class="font-mono text-[12px] text-[#525252]">
@@ -158,29 +150,29 @@
       </article>
 
       <!-- Project 3 -->
-    <USeparator class="h-4" />
+      <USeparator class="h-4" />
       <article
-        class="py-6.25"
-      >
-        <div
-          class="flex items-baseline justify-between gap-5 max-[600px]:block"
-        >
-          <div class="font-mono text-xl">
-            03. Another Project
-          </div>
-
-          <div
-            class="font-mono text-[12px] text-muted max-[600px]:mt-1.25 max-[600px]:block"
+          class="py-6.25"
           >
-            2025
+          <div
+              class="flex items-baseline justify-between gap-5 max-[600px]:block"
+              >
+              <div class="font-mono text-xl">
+                03. Another Project
+              </div>
+
+            <div
+                class="font-mono text-[12px] text-muted max-[600px]:mt-1.25 max-[600px]:block"
+                >
+                2025
+            </div>
           </div>
-        </div>
 
         <p
-          class="my-2.5 mb-3.5 max-w-150 text-sm text-muted"
-        >
-          Short description of what this project does
-          and why it exists.
+            class="my-2.5 mb-3.5 max-w-150 text-sm text-muted"
+            >
+            Short description of what this project does
+            and why it exists.
         </p>
 
         <div class="font-mono text-[12px] text-[#525252]">
@@ -192,41 +184,41 @@
     <!-- Contact -->
     <USeparator class="h-4" />
     <section
-      id="contact"
-      class="py-20 max-[600px]:py-15"
-    >
-      <div
-        class="relative mb-10 flex items-center gap-3 font-mono text-[14px] before:text-accent before:content-['$']"
-      >
-        echo $CONTACT
-      </div>
+        id="contact"
+        class="py-20 max-[600px]:py-15"
+        >
+        <div
+            class="relative mb-10 flex items-center gap-3 font-mono text-[14px] before:text-accent before:content-['$']"
+            >
+            echo $CONTACT
+        </div>
 
-      <div class="max-w-162.5 text-base text-muted dark:text-[#a3a3a3]">
-        <p class="mb-5">
-          Have a project or want to talk?
-        </p>
+          <div class="max-w-162.5 text-base text-muted dark:text-[#a3a3a3]">
+            <p class="mb-5">
+            Have a project or want to talk?
+            </p>
 
-        <p class="mb-5">
-          <a
-            href="mailto:hello@example.com"
-            class="transition-colors hover:text-accent"
+      <p class="mb-5">
+      <a
+          href="mailto:hello@example.com"
+          class="transition-colors hover:text-accent"
           >
-            hello@example.com ↗
-          </a>
-        </p>
-      </div>
+          hello@example.com ↗
+      </a>
+      </p>
+          </div>
     </section>
 
     <!-- Footer -->
     <USeparator class="h-4" />
     <footer
-      class="flex justify-between py-7.5 font-mono text-[12px] text-muted max-[600px]:block"
-    >
-      <span>samuel@nandi ~</span>
+        class="flex justify-between py-7.5 font-mono text-[12px] text-muted max-[600px]:block"
+        >
+        <span>samuel@nandi ~</span>
 
-      <span class="max-[600px]:mt-2 max-[600px]:block">
-        © 2026
-      </span>
+        <span class="max-[600px]:mt-2 max-[600px]:block">
+          © 2026
+        </span>
     </footer>
   </div>
 </template>
