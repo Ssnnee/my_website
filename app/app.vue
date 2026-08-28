@@ -25,43 +25,12 @@ useSeoMeta({
 </script>
 
 <template>
-  <UApp>
-    <UHeader>
-      <template #left>
-        <NuxtLink to="/">
-          <AppLogo class="w-auto h-6 shrink-0" />
-        </NuxtLink>
-      </template>
-
-      <template #right>
-        <NavLink class="w-auto text-accent" />
-        <UColorModeButton />
-      </template>
-    </UHeader>
-
-    <UMain>
-      <NuxtPage />
-    </UMain>
-
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
-
-    <UFooter>
-      <template #left>
-        <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
-        </p>
-      </template>
-
-      <template #right>
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
-    </UFooter>
+  <div class ="mx-auto w-[min(900px,calc(100%-40px))] text-(--fg) max-[600px]:w-[min(calc(100%-28px),900px)]">
+    <UApp>
+      <NavLink class="w-auto text-accent" />
+      <UMain>
+        <NuxtPage />
+      </UMain>
   </UApp>
+</div>
 </template>

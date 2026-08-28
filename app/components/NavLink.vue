@@ -1,29 +1,42 @@
 <script setup lang="ts">
-  import type { NavigationMenuItem } from '@nuxt/ui'
+import { computed } from 'vue'
+import type { NavigationMenuItem } from '@nuxt/ui'
 
-  const items = ref<NavigationMenuItem[]>([
-    {
+const route = useRoute()
+
+const items = computed<NavigationMenuItem[]>(() => [{
       label: 'about',
       to: '#about',
-    },
-    {
-      label: 'projects',
-      to: '#projects'
-    },
-    {
-      label: 'contact',
-      to: '#contact'
-    }
-  ])
+  active: route.path.startsWith('#about')
+}, {
+  label: 'projects',
+  to: '#projects',
+  active: route.path.startsWith('#projects')
+}, {
+  label: 'contact',
+  to: '#contact',
+},
+])
 </script>
 
 <template>
-  <UNavigationMenu
-    class="font-mono"
-    :items="items"
-    variant="link"
-    :ui="{
-      link: 'text-[#a3a3a3]'
-    }"
-  />
+  <UHeader :ui="{ toggle: 'sm:hidden', container: 'px-0 sm:px-0 lg:px-0' }">
+      <template #left>
+        <NuxtLink to="/">
+          <AppLogo class="" />
+        </NuxtLink>
+      </template>
+
+    <template #right>
+      <UNavigationMenu :items="items" class="hidden sm:flex" />
+      <UColorModeButton />
+    </template>
+
+    <template #body>
+      <UNavigationMenu :items="items" orientation="vertical" class="" />
+    </template>
+
+  </UHeader>
 </template>
+
+
