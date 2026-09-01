@@ -212,12 +212,12 @@
     <!-- Footer -->
     <USeparator class="h-4" />
     <footer
-        class="flex justify-between py-7.5 font-mono text-[12px] text-muted max-[600px]:block"
+        class="flex flex-wrap justify-between py-7.5 font-mono text-[12px] text-muted"
         >
         <span>samuel@nandi ~</span>
 
-        <span class="max-[600px]:mt-2 max-[600px]:block">
-          © 2026
+        <span class="ml-auto">
+          © {{ new Date().getFullYear() }}
         </span>
     </footer>
   </div>
