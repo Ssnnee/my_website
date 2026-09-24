@@ -30,3 +30,7 @@
    */
   --ui-primary: var(--ui-color-primary-400);
 }
+
+html {
+  scroll-behavior: smooth;
+}
